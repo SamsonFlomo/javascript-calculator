@@ -1,23 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import { buttonList } from "./buttons.js";
+import { buttonPressed } from "./utils.js";
 
 function App() {
+    const buttons = buttonList;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Javascript Calculator</h1>
+
+      <div id="calclator">
+        <div id="display">
+            <div id="answer"></div>
+            <div id="expression"></div>
+        </div>
+
+        <div id="buttons">
+           {
+        	buttons.map((button) => (
+        		<button 
+        			className={button.color} 
+        			id={button.id} 
+        			onClick={() => buttonPressed(button.input)} >
+        			  {button.data}
+        	        </button>
+        	))
+            }
+        </div>
+      </div>
+
     </div>
   );
 }
