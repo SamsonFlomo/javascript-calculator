@@ -1,5 +1,6 @@
 :root {
-    --name: 0;
+    --primary-txt: EEF8F8;
+    --primary-background: #1B174E;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-background);
+  color: var(--primary-txt);
 }
 
 code {

@@ -7,13 +7,15 @@ function App() {
     const buttons = buttonList;
 
   return (
-    <div className="App">
+    <div className="App  flex" >
       <h1>Javascript Calculator</h1>
 
-      <div id="calclator">
-        <div id="display">
-            <div id="answer"></div>
-            <div id="expression"></div>
+      <div id="calculator" className="flex" >
+        <div id="brand">SF</div>
+      
+        <div id="display" className="flex">
+            <div id="answer">24</div>
+            <div id="expression">10 + 14</div>
         </div>
 
         <div id="buttons">
