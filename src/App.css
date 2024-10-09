@@ -70,6 +70,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5%;
+  margin-bottom: .5rem;
 }
 
 button {
@@ -78,7 +79,7 @@ button {
   font-weight: bold;
   background-color: var(--primary-background);
   color: var(--primary-txt);
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 #zero {
@@ -103,7 +104,7 @@ button {
 
   #calculator {
     width: 70%;
-    height: 70%;
+    height: 74%;
     margin-top: 2rem;
   }
 
