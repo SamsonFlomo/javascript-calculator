@@ -13,7 +13,7 @@ export const buttonList = [
     },
     {
     	data: "%",
-        id: "percentage",
+        id: "percent",
         input: "%",
         color: "blue",
     },
