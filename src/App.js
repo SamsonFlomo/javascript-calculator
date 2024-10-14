@@ -7,7 +7,7 @@ import { isOperator } from "./utils.js";
 function App() {
     const buttons = buttonList;
     const [answer, setAnswer] = useState(" ");
-    const [expression, setExpression] = useState("  ");
+    const [expression, setExpression] = useState("0");
     
     let et = expression.trim();
     const isOperator = (symbol) => {
